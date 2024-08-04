@@ -1,0 +1,31 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>McDonald's UK Survey Code Generator</title>
+    </head>
+    <body>
+        <main>
+            <section class="inputs">
+                <div class="row">
+                    <label class="df aic">
+                        <span>Store:</span>
+                        <select id="store-id" autocomplete="on">
+                            <option></option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="row">
+                    <label class="df aic">
+                        <span>Order ID:</span>
+                        <input id="order-id" type="number" pattern="[0-9]*" min="0" autocomplete="off" />
+                    </label>
+                </div>
+
+                <div class="row">
+                    <label class="df aic">
+                        <span>Purchased:</span>
+                        <input id="purchased" type="datetime-local" min="2016-02-01T00:00" autocomplete="off" />
